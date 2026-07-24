@@ -1115,7 +1115,7 @@ export default function LandingPage({
                 </button>
               </div>
 
-              <div style={{ display: 'flex', gap: '2rem', marginTop: '3.5rem', borderTop: '1px solid var(--color-border)', paddingTop: '2rem' }}>
+              <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', marginTop: '3.5rem', borderTop: '1px solid var(--color-border)', paddingTop: '2rem' }}>
                 <div>
                   <h4 style={{ fontSize: '1.8rem', color: 'var(--color-text)' }}>%92</h4>
                   <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>{t[lang].statAccuracy}</p>
