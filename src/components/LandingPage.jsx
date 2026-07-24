@@ -1092,7 +1092,7 @@ export default function LandingPage({
       {/* Hero Section */}
       <section style={{ padding: '130px 0 60px 0', minHeight: '85vh', display: 'flex', alignItems: 'center' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '3rem', alignItems: 'center' }}>
+          <div className="hero-grid-wrapper" style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '3rem', alignItems: 'center' }}>
             <div>
               <div className="badge badge-cyan" style={{ marginBottom: '1.5rem' }}>
                 <Sparkles size={12} /> {t[lang].heroBadge}
@@ -1132,7 +1132,7 @@ export default function LandingPage({
             </div>
 
             {/* Interactive Trend Radar Preview */}
-            <div style={{ position: 'relative', marginTop: '-3rem' }}>
+            <div className="hero-radar-box" style={{ position: 'relative', marginTop: '-3rem' }}>
               <div className="glass-card" style={{ padding: '1.8rem', border: '1px solid rgba(0, 210, 255, 0.15)', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }}>
                 <div className="flex-between" style={{ marginBottom: '1.5rem' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
