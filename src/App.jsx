@@ -556,15 +556,21 @@ function App() {
           </div>
 
           {/* Navigation Links */}
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <nav style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', background: 'rgba(255, 255, 255, 0.03)', padding: '0.3rem', borderRadius: '9999px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
             <button
               onClick={() => setView('landing')}
               className="btn"
               style={{
-                background: 'transparent',
-                color: view === 'landing' ? 'var(--color-secondary)' : 'var(--color-text-muted)',
-                fontSize: '0.9rem',
-                padding: '0.5rem 1rem'
+                background: view === 'landing' ? 'linear-gradient(135deg, rgba(0, 210, 255, 0.18) 0%, rgba(27, 79, 255, 0.12) 100%)' : 'transparent',
+                color: view === 'landing' ? '#ffffff' : 'rgba(255, 255, 255, 0.65)',
+                borderColor: view === 'landing' ? 'rgba(0, 210, 255, 0.35)' : 'transparent',
+                borderStyle: 'solid',
+                borderWidth: '1px',
+                fontSize: '0.85rem',
+                fontWeight: view === 'landing' ? '700' : '500',
+                padding: '0.4rem 1.1rem',
+                borderRadius: '9999px',
+                transition: 'all 0.2s ease'
               }}
             >
               {t[lang].landing}
@@ -573,10 +579,16 @@ function App() {
               onClick={() => navigateToWorkspace('creator')}
               className="btn"
               style={{
-                background: 'transparent',
-                color: view === 'creator' ? 'var(--color-secondary)' : 'var(--color-text-muted)',
-                fontSize: '0.9rem',
-                padding: '0.5rem 1rem'
+                background: view === 'creator' ? 'linear-gradient(135deg, rgba(0, 210, 255, 0.18) 0%, rgba(27, 79, 255, 0.12) 100%)' : 'transparent',
+                color: view === 'creator' ? '#ffffff' : 'rgba(255, 255, 255, 0.65)',
+                borderColor: view === 'creator' ? 'rgba(0, 210, 255, 0.35)' : 'transparent',
+                borderStyle: 'solid',
+                borderWidth: '1px',
+                fontSize: '0.85rem',
+                fontWeight: view === 'creator' ? '700' : '500',
+                padding: '0.4rem 1.1rem',
+                borderRadius: '9999px',
+                transition: 'all 0.2s ease'
               }}
             >
               {t[lang].creator}
@@ -585,10 +597,16 @@ function App() {
               onClick={() => navigateToWorkspace('brand')}
               className="btn"
               style={{
-                background: 'transparent',
-                color: view === 'brand' ? 'var(--color-secondary)' : 'var(--color-text-muted)',
-                fontSize: '0.9rem',
-                padding: '0.5rem 1rem'
+                background: view === 'brand' ? 'linear-gradient(135deg, rgba(0, 210, 255, 0.18) 0%, rgba(27, 79, 255, 0.12) 100%)' : 'transparent',
+                color: view === 'brand' ? '#ffffff' : 'rgba(255, 255, 255, 0.65)',
+                borderColor: view === 'brand' ? 'rgba(0, 210, 255, 0.35)' : 'transparent',
+                borderStyle: 'solid',
+                borderWidth: '1px',
+                fontSize: '0.85rem',
+                fontWeight: view === 'brand' ? '700' : '500',
+                padding: '0.4rem 1.1rem',
+                borderRadius: '9999px',
+                transition: 'all 0.2s ease'
               }}
             >
               {t[lang].brand}
