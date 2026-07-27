@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Show machine information
         run: |
-          echo "Runner çalışıyor"
+          echo "Runner calisiyor"
           hostname
           whoami
           uname -a
