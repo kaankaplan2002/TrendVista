@@ -1,0 +1,24 @@
+name: Test Self-Hosted Mac Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-runner:
+    runs-on: [self-hosted, macOS, ARM64]
+
+    steps:
+      - name: Show machine information
+        run: |
+          echo "Runner çalışıyor"
+          hostname
+          whoami
+          uname -a
+          sw_vers
+
+      - name: Check installed tools
+        run: |
+          git --version
+          python3 --version || true
+          node --version || true
+          npm --version || true
